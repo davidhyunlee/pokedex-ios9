@@ -11,6 +11,11 @@ import UIKit
 class PokemonDetailVC: UIViewController {
 
     @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var mainImg: UIImageView!
+    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var typeLbl: UILabel!
+    
+    
     var pokemon: Pokemon!
     
     override func viewDidLoad() {
