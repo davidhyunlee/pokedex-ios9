@@ -39,6 +39,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YN-Ht-MIz">
                                         <rect key="frame" x="8" y="10" width="61" height="35"/>
                                         <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="zgN-TK-pbK" eventType="touchUpInside" id="BGg-S4-4if"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25932044809999999" green="0.4691016979" blue="0.6204392997" alpha="1" colorSpace="calibratedRGB"/>
@@ -234,9 +237,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentEvoImg" destination="Fmi-Sf-4aw" id="2o2-Wh-NeR"/>
+                        <outlet property="defenseLbl" destination="8nf-PM-fOC" id="hVf-MG-tT9"/>
                         <outlet property="descriptionLbl" destination="lel-R8-zQ4" id="iyk-00-ZR6"/>
+                        <outlet property="evoLbl" destination="ZDP-8I-0lk" id="cKc-VV-fcw"/>
+                        <outlet property="heightLbl" destination="RIf-BR-epi" id="IFD-xI-Dw5"/>
                         <outlet property="mainImg" destination="LzW-Hh-c68" id="Vk1-7k-Ppi"/>
                         <outlet property="nameLbl" destination="hYy-Fv-VuA" id="TG0-Yf-YfW"/>
+                        <outlet property="nextEvoImg" destination="e8y-2d-M4o" id="jhm-h6-cgW"/>
+                        <outlet property="pokedexLbl" destination="DLY-U8-uyE" id="eb5-En-ZFu"/>
                         <outlet property="typeLbl" destination="hT3-JH-pnP" id="z9Z-DK-YaN"/>
                     </connections>
                 </viewController>
